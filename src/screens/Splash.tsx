@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react';
-import {View, Text, Image} from 'react-native';
+import React, {FC} from 'react';
+import {View, Image} from 'react-native';
 
 import {} from '@react-navigation/native';
 
-const Splash = ({navigation}) => {
+const Splash: FC = ({}) => {
   return (
     <View style={{flex: 1, justifyContent: 'flex-start', alignItems: 'center'}}>
       <Image

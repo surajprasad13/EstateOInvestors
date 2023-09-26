@@ -1,20 +1,13 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {
-  View,
-  Text,
-  SafeAreaView,
-  ActivityIndicator,
-  Alert,
-  BackHandler,
-} from 'react-native';
+import React, {useEffect, useRef, useState, FC} from 'react';
+import {SafeAreaView, BackHandler} from 'react-native';
 
 import {WebView} from 'react-native-webview';
 import Splash from './Splash';
 
-const Home = () => {
-  const ref = useRef(null);
+const Home: FC = ({}) => {
+  const ref = useRef<WebView>(null);
   const [back, setBack] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     BackHandler.addEventListener('hardwareBackPress', onAndroidBackPress);
@@ -35,7 +28,7 @@ const Home = () => {
     <SafeAreaView style={{flex: 1}}>
       <WebView
         ref={ref}
-        source={{uri: 'https://9live.news/'}}
+        source={{uri: 'https://estateoinvester.com'}}
         style={{flex: 1}}
         startInLoadingState={true}
         decelerationRate="fast"
