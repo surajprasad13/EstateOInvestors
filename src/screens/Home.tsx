@@ -28,7 +28,7 @@ const Home: FC = ({}) => {
     <SafeAreaView style={{flex: 1}}>
       <WebView
         ref={ref}
-        source={{uri: 'https://estateoinvester.com'}}
+        source={{uri: 'https://estateoinvester.com/login'}}
         style={{flex: 1}}
         startInLoadingState={true}
         decelerationRate="fast"
